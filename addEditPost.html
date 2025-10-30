@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add or Edit Post</title>
+    <link rel="stylesheet" href="addEditStyle.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="logo">Blog<span>Post</span></div>
+      <div class="homeDiv">
+        <button class="homeBtn">
+          <a href="index.html"> Home </a>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <form>
+        <table>
+          <legend id="table-head">Add Post</legend>
+          <tr>
+            <td>
+              <label for="title">Title</label>
+            </td>
+            <td>
+              <input type="text" id="title" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="content">Content</label>
+            </td>
+            <td>
+              <textarea id="content" required></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="image">Image</label>
+            </td>
+            <td>
+              <input type="file" accept="image/*" id="image" required hidden />
+              <div class="imageDiv">
+                <label for="image" id="image-placeholder">Upload Image</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script src="addEditPost.js" type="module"></script>
+  </body>
+</html>

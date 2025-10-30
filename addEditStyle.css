@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  font-family: sans-serif;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+header .homeDiv {
+  display: flex;
+  gap: 1rem;
+}
+header .homeDiv button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #0077cc;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+header .homeDiv button:hover {
+  background-color: #005fa3;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.container form {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.container form table {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.container form table td {
+  padding: 0.5rem;
+}
+.container form table td input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.container form table td textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.imageDiv {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.imageDiv img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.imageDiv #removeImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid #ccc;
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.imageDiv #removeImage:hover {
+  background-color: rgb(193, 13, 13);
+}
+.imageDiv #image-placeholder {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    width: 100%;
+  }
+  header .logo {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container form table tr {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .imageDiv {
+    border: none;
+  }
+  #image-placeholder {
+    border: 1px solid #ccc;
+  }
+}
